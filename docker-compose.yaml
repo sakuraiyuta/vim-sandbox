@@ -1,0 +1,13 @@
+version: '3'
+services:
+  vim-sandbox:
+    user: "1000:1000"
+    build: ./
+    container_name: vim
+    volumes:
+      - ./:/home/yuta/
+      - /etc/passwd:/etc/passwd:ro
+      - /etc/shadow:/etc/shadow:ro
+      - /etc/group:/etc/group:ro
+      - /etc/sudoers:/etc/sudoers:ro
+      - ./tmp/:/tmp/

@@ -1,0 +1,257 @@
+# The configurations that used for the recording, feel free to edit them
+config:
+
+  # Specify a command to be executed
+  # like `/bin/bash -l`, `ls`, or any other commands
+  # the default is bash for Linux
+  # or powershell.exe for Windows
+  command: bash -l
+  
+  # Specify the current working directory path
+  # the default is the current working directory path
+  cwd: /home/yuta/git/vim-sandbox
+  
+  # Export additional ENV variables
+  env:
+    recording: true
+  
+  # Explicitly set the number of columns
+  # or use `auto` to take the current
+  # number of columns of your shell
+  cols: 80
+  
+  # Explicitly set the number of rows
+  # or use `auto` to take the current
+  # number of rows of your shell
+  rows: 24
+  
+  # Amount of times to repeat GIF
+  # If value is -1, play once
+  # If value is 0, loop indefinitely
+  # If value is a positive number, loop n times
+  repeat: 0
+  
+  # Quality
+  # 1 - 100
+  quality: 100
+  
+  # Delay between frames in ms
+  # If the value is `auto` use the actual recording delays
+  frameDelay: auto
+  
+  # Maximum delay between frames in ms
+  # Ignored if the `frameDelay` isn't set to `auto`
+  # Set to `auto` to prevent limiting the max idle time
+  maxIdleTime: 2000
+  
+  # The surrounding frame box
+  # The `type` can be null, window, floating, or solid`
+  # To hide the title use the value null
+  # Don't forget to add a backgroundColor style with a null as type
+  frameBox:
+    type: floating
+    title: Terminalizer
+    style:
+      border: 0px black solid
+      # boxShadow: none
+      # margin: 0px
+  
+  # Add a watermark image to the rendered gif
+  # You need to specify an absolute path for
+  # the image on your machine or a URL, and you can also
+  # add your own CSS styles
+  watermark:
+    imagePath: null
+    style:
+      position: absolute
+      right: 15px
+      bottom: 15px
+      width: 100px
+      opacity: 0.9
+  
+  # Cursor style can be one of
+  # `block`, `underline`, or `bar`
+  cursorStyle: block
+  
+  # Font family
+  # You can use any font that is installed on your machine
+  # in CSS-like syntax
+  fontFamily: "Monaco, Lucida Console, Ubuntu Mono, Monospace"
+  
+  # The size of the font
+  fontSize: 12
+  
+  # The height of lines
+  lineHeight: 1
+  
+  # The spacing between letters
+  letterSpacing: 0
+  
+  # Theme
+  theme:
+    background: "transparent"
+    foreground: "#afafaf"
+    cursor: "#c7c7c7"
+    black: "#232628"
+    red: "#fc4384"
+    green: "#b3e33b"
+    yellow: "#ffa727"
+    blue: "#75dff2"
+    magenta: "#ae89fe"
+    cyan: "#708387"
+    white: "#d5d5d0"
+    brightBlack: "#626566"
+    brightRed: "#ff7fac"
+    brightGreen: "#c8ed71"
+    brightYellow: "#ebdf86"
+    brightBlue: "#75dff2"
+    brightMagenta: "#ae89fe"
+    brightCyan: "#b1c6ca"
+    brightWhite: "#f9f9f4"
+  
+# Records, feel free to edit them
+records:
+  - delay: 291
+    content: "\e]0;yuta@yuta-win10-wsl:/home/yuta/git/vim-sandbox export PS1\a\e]0;yuta@yuta-win10-wsl:/home/yuta/git/vim-sandbox for FILE in $(ls ~/.bash/*.sh | sort)\a\e]0;yuta@yuta-win10-wsl:/home/yuta/git/vim-sandbox source ${FILE}\a"
+  - delay: 83
+    content: "\e]0;yuta@yuta-win10-wsl:/home/yuta/git/vim-sandbox for FILE in $(ls ~/.bash/*.sh | sort)\a\e]0;yuta@yuta-win10-wsl:/home/yuta/git/vim-sandbox source ${FILE}\a"
+  - delay: 9
+    content: "\e]0;yuta@yuta-win10-wsl:/home/yuta/git/vim-sandbox for FILE in $(ls ~/.bash/*.sh | sort)\a\e]0;yuta@yuta-win10-wsl:/home/yuta/git/vim-sandbox source ${FILE}\a\e]0;yuta@yuta-win10-wsl:/home/yuta/git/vim-sandbox for FILE in $(ls ~/.bash/*.sh | sort)\a\e]0;yuta@yuta-win10-wsl:/home/yuta/git/vim-sandbox source ${FILE}\a\e]0;yuta@yuta-win10-wsl:/home/yuta/git/vim-sandbox for FILE in $(ls ~/.bash/*.sh | sort)\a\e]0;yuta@yuta-win10-wsl:/home/yuta/git/vim-sandbox source ${FILE}\a"
+  - delay: 108
+    content: "\e]0;yuta@yuta-win10-wsl:/home/yuta/git/vim-sandbox for FILE in $(ls ~/.bash/*.sh | sort)\a\e]0;yuta@yuta-win10-wsl:/home/yuta/git/vim-sandbox source ${FILE}\a"
+  - delay: 6
+    content: "\e]0;yuta@yuta-win10-wsl:/home/yuta/git/vim-sandbox [ -f ~/.fzf.bash ]\a\e]0;yuta@yuta-win10-wsl:/home/yuta/git/vim-sandbox source ~/.fzf.bash\a"
+  - delay: 11
+    content: "\e]0;yuta@yuta-win10-wsl:/home/yuta/git/vim-sandbox . \"$HOME/.cargo/env\"\a\e]0;yuta@yuta-win10-wsl:/home/yuta/git/vim-sandbox [ -d \"$HOME/bin\" ]\a\e]0;yuta@yuta-win10-wsl:/home/yuta/git/vim-sandbox PATH=\"$HOME/bin:$PATH\"\a\e]0;yuta@yuta-win10-wsl:/home/yuta/git/vim-sandbox [ -d \"$HOME/.local/bin\" ]\a\e]0;yuta@yuta-win10-wsl:/home/yuta/git/vim-sandbox PATH=\"$HOME/.local/bin:$PATH\"\a\e]0;yuta@yuta-win10-wsl:/home/yuta/git/vim-sandbox export LANG=en_US.UTF-8\a\e]0;yuta@yuta-win10-wsl:/home/yuta/git/vim-sandbox export LANGUAGE=en_US.UTF-8\a\e]0;yuta@yuta-win10-wsl:/home/yuta/git/vim-sandbox [ -z \"${SSH_CONNECTION}\" ]\a\e]0;yuta@yuta-win10-wsl:/home/yuta/git/vim-sandbox eval $(ssh-agent)\a\e]0;yuta@yuta-win10-wsl:/home/yuta/git/vim-sandbox SSH_AUTH_SOCK=/tmp/ssh-FKMiCfD5dUnw/agent.343822\a\e]0;yuta@yuta-win10-wsl:/home/yuta/git/vim-sandbox export SSH_AUTH_SOCK\a\e]0;yuta@yuta-win10-wsl:/home/yuta/git/vim-sandbox SSH_AGENT_PID=343823\a\e]0;yuta@yuta-win10-wsl:/home/yuta/git/vim-sandbox export SSH_AGENT_PID\a\e]0;yuta@yuta-win10-wsl:/home/yuta/git/vim-sandbox echo Agent pid 343823\aAgent pid 343823\r\n\e]0;yuta@yuta-win10-wsl:/home/yuta/git/vim-sandbox ssh-add $HOME/.ssh/id_rsa\aEnter passphrase for /home/yuta/.ssh/id_rsa: "
+  - delay: 3281
+    content: "\r\nIdentity added: /home/yuta/.ssh/id_rsa (/home/yuta/.ssh/id_rsa)\r\n\e]0;yuta@yuta-win10-wsl:/home/yuta/git/vim-sandbox export PATH=\"$PATH:/mnt/c/Program Files/Docker/Docker/resources/bin:/mnt/c/ProgramData/DockerDesktop/version-bin\"\a\e]0;yuta@yuta-win10-wsl: ~/git/vim-sandbox\a\e[01;32myuta@yuta-win10-wsl\e[00m:\e[01;34m~/git/vim-sandbox\e[35m[git:master]\e[00m$ "
+  - delay: 1847
+    content: .
+  - delay: 66
+    content: /
+  - delay: 256
+    content: r
+  - delay: 142
+    content: u
+  - delay: 129
+    content: 'n.sh '
+  - delay: 384
+    content: "\r\n\e]0;yuta@yuta-win10-wsl:/home/yuta/git/vim-sandbox ./run.sh\a"
+  - delay: 335
+    content: "Stopping vim ... \r\r\n"
+  - delay: 10429
+    content: "\e[1A\e[2K\rStopping vim ... \e[32mdone\e[0m\r\e[1B"
+  - delay: 10
+    content: "Removing vim ... \r\r\n"
+  - delay: 10
+    content: "\e[1A\e[2K\rRemoving vim ... \e[32mdone\e[0m\r\e[1BRemoving network vim-sandbox_default\r\n"
+  - delay: 580
+    content: "Building vim-sandbox\r\n"
+  - delay: 87
+    content: "Sending build context to Docker daemon  557.1kB\r"
+  - delay: 100
+    content: "Sending build context to Docker daemon   11.7MB\r"
+  - delay: 102
+    content: "Sending build context to Docker daemon  35.09MB\r"
+  - delay: 100
+    content: "Sending build context to Docker daemon  57.93MB\r"
+  - delay: 65
+    content: "Sending build context to Docker daemon  68.84MB\r\r\r\n"
+  - delay: 5
+    content: "Step 1/7 : FROM ubuntu:focal\r\n ---> 3bc6e9f30f51\r\nStep 2/7 : ENV DEBIAN_FRONTEND=noninteractive\r\n ---> Using cache\r\n ---> c9bec5c020bd\r\nStep 3/7 : RUN apt update &&   apt upgrade -y &&   apt install -y -qq   sudo   locales   openjdk-17-jre-headless   curl   git   software-properties-common   python3-dev   python3-pip\r\n ---> Using cache\r\n ---> 16596b557a5a\r\nStep 4/7 : RUN add-apt-repository -y ppa:neovim-ppa/unstable &&   apt update &&   apt install -y neovim\r\n ---> Using cache\r\n ---> dc560215e67f\r\nStep 5/7 : ENV LANG=\"ja_JP.UTF-8\" LANGUAGE=\"ja_JP:ja\" LC_ALL=\"ja_JP.UTF-8\"\r\n ---> Using cache\r\n ---> 7b2146761cc5\r\nStep 6/7 : RUN pip3 install --upgrade neovim &&   rm -rf ~/.cache &&   rm -rf ~/.local\r\n ---> Using cache\r\n ---> 485187691d9c\r\nStep 7/7 : ENTRYPOINT [\"tail\", \"-f\"]\r\n ---> Using cache\r\n ---> be02882498be\r\n"
+  - delay: 23
+    content: "Successfully built be02882498be\r\n"
+  - delay: 137
+    content: "Successfully tagged vim-sandbox_vim-sandbox:latest\r\n"
+  - delay: 404
+    content: "Creating network \"vim-sandbox_default\" with the default driver\r\n"
+  - delay: 50
+    content: "Creating vim ... \r\r\n"
+  - delay: 664
+    content: "\e[1A\e[2K\rCreating vim ... \e[32mdone\e[0m\r\e[1B"
+  - delay: 519
+    content: "\e[?1049h\e[22;0;0t\e[22;0t\e[?1h\e=\e[H\e[2J\e]11;?\a\e[?2004h\e[?u\e[c\e[?25h"
+  - delay: 70
+    content: "\e[?25l\e(B\e[m\e[H\e[2J\e[>4;2m\e[38;5;224m(\e(B\e[m\e[38;5;81mns\e(B\e[m \e(B\e[0;1m\e[96mtest\e(B\e[m\e[38;5;224m)\e(B\e[m\e[K\r\n\e[K\n\e[38;5;224m(\e(B\e[0;1m\e[96mprintln\e(B\e[m \e[95m\"test\"\e(B\e[m\e[38;5;224m)\e(B\e[m\e[K\r\n\e[K\n\e[38;5;224m(\e(B\e[0;1m\e[96mprintln\e(B\e[m \e[95m\"test\"\e(B\e[m\e[38;5;224m)\e(B\e[m\e[K\r\n\e[K\n\e[38;5;224m(\e(B\e[0;1m\e[96mprintln-str\e(B\e[m \e[95m\"test\"\e(B\e[m\e[38;5;224m)\e(B\e[m\e[K\r\n\e[94m~\e[K\r\n~\e[K\r\n~\e[K\r\n~\e[K\r\n~\e[K\r\n~\e[K\r\n~\e[K\r\n~\e[K\r\n~\e[K\r\n~\e[K\r\n~\e[K\r\n~\e[K\r\n~\e[K\r\n~\e[K\r\n~\e[K\r\n\e(B\e[0;1;7mhome/yuta/tmp/test.clj                                        1,1            All\e]112\a\e[2 q\e]112\a\e[2 q\e[?1002h\e[?1006h\e[H\e[?25h"
+  - delay: 41
+    content: "\e[?25l\e[?1004h\e[?25h"
+  - delay: 1220
+    content: "\e[?25l\e[24;70H\e(B\e[mj         \e[H\e[?25h\e[?25l\e[24;70H \e[23;63H\e(B\e[0;1;7m2,0-1\r\e[21A\e[?25h"
+  - delay: 259
+    content: "\e[?25l\e[24;70H\e(B\e[mj\r\e[22A\e[?25h\e[?25l\e[24;70H \r\e[21A\e[38;5;224m\e[46m(\e(B\e[0;1m\e[96mprintln\e(B\e[m \e[95m\"test\"\e(B\e[m\e[38;5;224m\e[46m)\e[23;63H\e(B\e[0;1;7m3,1  \r\e[20A\e[?25h"
+  - delay: 32
+    content: "\e[?25l\e[24;70H\e(B\e[mj\r\e[21A\e[?25h\e[?25l\e[24;70H \r\e[21A\e[38;5;224m(\e(B\e[0;1m\e[96mprintln\e(B\e[m \e[95m\"test\"\e(B\e[m\e[38;5;224m)\e[23;63H\e(B\e[0;1;7m4,0-1\r\e[19A\e[?25h"
+  - delay: 32
+    content: "\e[?25l\e[24;70H\e(B\e[mj\r\e[20A\e[?25h\e[?25l\e[24;70H \r\e[19A\e[38;5;224m\e[46m(\e(B\e[0;1m\e[96mprintln\e(B\e[m \e[95m\"test\"\e(B\e[m\e[38;5;224m\e[46m)\e[23;63H\e(B\e[0;1;7m5,1  \r\e[18A\e[?25h"
+  - delay: 31
+    content: "\e[?25l\e[24;70H\e(B\e[mj\r\e[19A\e[?25h\e[?25l\e[24;70H \r\e[19A\e[38;5;224m(\e(B\e[0;1m\e[96mprintln\e(B\e[m \e[95m\"test\"\e(B\e[m\e[38;5;224m)\e[23;63H\e(B\e[0;1;7m6,0-1\r\e[17A\e[?25h"
+  - delay: 30
+    content: "\e[?25l\e[24;70H\e(B\e[mj\r\e[18A\e[?25h\e[?25l\e[24;70H \r\e[17A\e[38;5;224m\e[46m(\e(B\e[0;1m\e[96mprintln-str\e(B\e[m \e[95m\"test\"\e(B\e[m\e[38;5;224m\e[46m)\e[23;63H\e(B\e[0;1;7m7,1  \r\e[16A\e[?25h"
+  - delay: 31
+    content: "\e[?25l\e[24;70H\e(B\e[mj\r\e[17A\e[?25h\e[?25l\e[24;70H \r\e[17A\e[?25h"
+  - delay: 32
+    content: "\e[?25l\e[24;70Hj\r\e[17A\e[?25h\e[?25l\e[24;70H \r\e[17A\e[?25h"
+  - delay: 32
+    content: "\e[?25l\e[24;70Hj\r\e[17A\e[?25h\e[?25l\e[24;70H \r\e[17A\e[?25h"
+  - delay: 47
+    content: "\e[?25l\e[24;70Hj\r\e[17A\e[?25h\e[?25l\e[24;70H \r\e[17A\e[?25h"
+  - delay: 31
+    content: "\e[?25l\e[24;70Hj\r\e[17A\e[?25h\e[?25l\e[24;70H \r\e[17A\e[?25h"
+  - delay: 321
+    content: "\e[?25l\e[24;70Ho\r\e[17A\e[?25h\e[?25l\e[24;70H \e]112\a\e[6 q\r\e[17A\e[?25h\e[?25l\e[17B\e(B\e[0;1m-- INSERT --\e(B\e[m\e[K\e[?25h\e[?25l\r\e[16A\e[K\e[23;24H\e(B\e[0;1;7m[+]\e[36C8\r\e[16A\e(B\e[m\e[38;5;224m(\e(B\e[0;1m\e[96mprintln-str\e(B\e[m \e[95m\"test\"\e(B\e[m\e[38;5;224m)\r\n\e[?25h"
+  - delay: 1052
+    content: "\e[?25l\e(B\e[m\n\e[K\e[23;63H\e(B\e[0;1;7m9\r\e[14A\e[?25h"
+  - delay: 841
+    content: "\e[?25l\e(B\e[m\e[38;5;224m(\e[23;65H\e(B\e[0;1;7m2\e[9;2H\e[?25h"
+  - delay: 432
+    content: "\e[?25l\e(B\e[mp\e[23;65H\e(B\e[0;1;7m3\e[9;3H\e[?25h"
+  - delay: 160
+    content: "\e[?25l\r\n\e(B\e[m\e[30m\e[105m pr                                     function   \e(B\e[m\e[107m \r\n\e(B\e[m\e[30m\e[105m pop                                    function   \e(B\e[m\e[48;5;248m \r\n\e(B\e[m\e[30m\e[105m prn                                    function   \e(B\e[m\e[48;5;248m \r\n\e(B\e[m\e[30m\e[105m peek                                   function   \e(B\e[m\e[48;5;248m \r\n\e(B\e[m\e[30m\e[105m pmap                                   function   \e(B\e[m\e[48;5;248m \r\n\e(B\e[m\e[30m\e[105m pop!                                   function   \e(B\e[m\e[48;5;248m \r\n\e(B\e[m\e[30m\e[105m pos?                                   function   \e(B\e[m\e[48;5;248m \r\n\e(B\e[m\e[30m\e[105m print                                  function   \e(B\e[m\e[48;5;248m \r\n\e(B\e[m\e[30m\e[105m proxy                                  function   \e(B\e[m\e[48;5;248m \r\n\e(B\e[m\e[30m\e[105m pcalls                                 function   \e(B\e[m\e[48;5;248m \r\n\e(B\e[m\e[30m\e[105m pr-str                                 function   \e(B\e[m\e[48;5;248m \r\n\e(B\e[m\e[30m\e[105m printf                                 function   \e(B\e[m\e[48;5;248m \r\n\e(B\e[m\e[30m\e[105m parents                                function   \e(B\e[m\e[48;5;248m \r\n\e(B\e[m\e[30m\e[105m partial                                function   \e(B\e[m\e[48;5;248m \e[9;3H\e[?25h"
+  - delay: 205
+    content: "\e[?25l\b\e(B\e[0;1m\e[96mpr\e[10;42H\e(B\e[m\e[94m           \e[11;42H           \e[12;42H           \e[13;42H           \e[14;42H           \e[15;42H           \e[16;42H           \e[17;42H           \e[18;42H           \e[19;42H           \e[20;42H           \e[21;42H           \e[22;42H           \e[23;42H\e(B\e[0;1;7m           \e[10;31H\e(B\e[m\e[30m\e[105mfunction  \e(B\e[m\e[107m \e[11;3H\e(B\e[m\e[30m\e[105mrn                          function  \e(B\e[m\e[107m \e[12;4H\e(B\e[m\e[30m\e[105mint                        function  \e(B\e[m\e[107m \e[13;3H\e(B\e[m\e[30m\e[105mroxy                        function  \e(B\e[m\e[107m \e[14;3H\e(B\e[m\e[30m\e[105mr-str                       function  \e(B\e[m\e[107m \e[15;3H\e(B\e[m\e[30m\e[105mrintf                       function  \e(B\e[m\e[48;5;248m \e[16;3H\e(B\e[m\e[30m\e[105mrefers                      function  \e(B\e[m\e[48;5;248m \e[17;7H\e(B\e[m\e[30m\e[105mln                      function  \e(B\e[m\e[48;5;248m \e[18;4H\e(B\e[m\e[30m\e[105mn-str                      function  \e(B\e[m\e[48;5;248m \e[19;3H\e(B\e[m\e[30m\e[105mromise                      function  \e(B\e[m\e[48;5;248m \e[20;2H\e(B\e[m\e[30m\e[105mProcess                      class     \e(B\e[m\e[48;5;248m \e[21;7H\e(B\e[m\e[30m\e[105m-dup                    function  \e(B\e[m\e[48;5;248m \e[22;3H\e(B\e[m\e[30m\e[105mrint-str                    function  \e(B\e[m\e[48;5;248m \e[23;3H\e(B\e[m\e[30m\e[105mrint-ctor                   function  \e(B\e[m\e[48;5;248m \e[9;3H\e[?25h\e[?25l\e[23;65H\e(B\e[0;1;7m4\e[9;4H\e[?25h"
+  - delay: 34
+    content: "\e[?25l\e(B\e[m\r\e[15B\e[12X\e[9;4H\e[?25h\e[?25l\r\e[15B\e(B\e[0;1m-- INSERT --\e[10;31H\e(B\e[m\e[30m\e[105m          function   \e(B\e[m\e[107m \e[11;31H\e(B\e[m\e[30m\e[105m          function   \e(B\e[m\e[48;5;248m \e[12;31H\e(B\e[m\e[30m\e[105m          function   \e(B\e[m\e[48;5;248m \e[13;31H\e(B\e[m\e[30m\e[105m          function   \e(B\e[m\e[48;5;248m \e[14;31H\e(B\e[m\e[30m\e[105m          function   \e(B\e[m\e[48;5;248m \e[15;31H\e(B\e[m\e[30m\e[105m          function   \e(B\e[m\e[48;5;248m \e[16;31H\e(B\e[m\e[30m\e[105m          function   \e(B\e[m\e[48;5;248m \e[17;31H\e(B\e[m\e[30m\e[105m          function   \e(B\e[m\e[48;5;248m \e[18;31H\e(B\e[m\e[30m\e[105m          function   \e(B\e[m\e[48;5;248m \e[19;31H\e(B\e[m\e[30m\e[105m          function   \e(B\e[m\e[48;5;248m \e[20;31H\e(B\e[m\e[30m\e[105m          class      \e(B\e[m\e[48;5;248m \e[21;31H\e(B\e[m\e[30m\e[105m          function   \e(B\e[m\e[48;5;248m \e[22;31H\e(B\e[m\e[30m\e[105m          function   \e(B\e[m\e[48;5;248m \e[23;31H\e(B\e[m\e[30m\e[105m          function   \e(B\e[m\e[48;5;248m \e[9;4H\e[?25h"
+  - delay: 149
+    content: "\e[?25l\r\e[C\e(B\e[mpri\e[10;40H\e[94m             \e[11;40H             \e[12;40H             \e[13;40H             \e[14;40H             \e[15;40H             \e[16;40H             \e[17;40H             \e[18;40H             \e[19;40H             \e[20;40H             \e[21;40H             \e[22;40H             \e[23;40H\e(B\e[0;1;7m             \e[10;4H\e(B\e[m\e[30m\e[105mint                      function  \e(B\e[m\e[107m \e[11;4H\e(B\e[m\e[30m\e[105mintf                     function  \e(B\e[m\e[107m \e[12;7H\e(B\e[m\e[30m\e[105mln                    function  \e(B\e[m\e[107m \e[13;4H\e(B\e[m\e[30m\e[105mint-dup                  function  \e(B\e[m\e[107m \e[14;4H\e(B\e[m\e[30m\e[105mint-str                  function  \e(B\e[m\e[107m \e[15;7H\e(B\e[m\e[30m\e[105m-ctor                 function  \e(B\e[m\e[107m \e[16;4H\e(B\e[m\e[30m\e[105mintln-str                function  \e(B\e[m\e[107m \e[17;7H\e(B\e[m\e[30m\e[105m-method               function  \e(B\e[m\e[107m \e[18;4H\e(B\e[m\e[30m\e[105mint-simple               function  \e(B\e[m\e[107m \e[19;2H\e(B\e[m\e[30m\e[105mPriorityQueue              class     \e(B\e[m\e[107m \e[20;4H\e(B\e[m\e[30m\e[105mintWriter-on             function  \e(B\e[m\e[107m \e[21;2H\e(B\e[m\e[30m\e[105mPrimitiveIterator          class     \e(B\e[m\e[107m \e[22;5H\e(B\e[m\e[30m\e[105mmitives-classnames      variable  \e(B\e[m\e[48;5;248m \e[23;2H\e(B\e[m\e[30m\e[105mPrimitiveIterator.OfInt    class     \e(B\e[m\e[48;5;248m \e[9;4H\e[?25h\e[?25l\e[23;65H\e(B\e[0;1;7m5\e[9;5H\e[?25h"
+  - delay: 32
+    content: "\e[?25l\e(B\e[m\r\e[15B\e[12X\e[9;5H\e[?25h\e[?25l\r\e[15B\e(B\e[0;1m-- INSERT --\e[10;29H\e(B\e[m\e[30m\e[105m            function   \e(B\e[m\e[107m \e[11;29H\e(B\e[m\e[30m\e[105m            function   \e(B\e[m\e[107m \e[12;29H\e(B\e[m\e[30m\e[105m            function   \e(B\e[m\e[107m \e[13;29H\e(B\e[m\e[30m\e[105m            function   \e(B\e[m\e[48;5;248m \e[14;29H\e(B\e[m\e[30m\e[105m            function   \e(B\e[m\e[48;5;248m \e[15;29H\e(B\e[m\e[30m\e[105m            function   \e(B\e[m\e[48;5;248m \e[16;29H\e(B\e[m\e[30m\e[105m            function   \e(B\e[m\e[48;5;248m \e[17;29H\e(B\e[m\e[30m\e[105m            function   \e(B\e[m\e[48;5;248m \e[18;29H\e(B\e[m\e[30m\e[105m            function   \e(B\e[m\e[48;5;248m \e[19;29H\e(B\e[m\e[30m\e[105m            class      \e(B\e[m\e[48;5;248m \e[20;29H\e(B\e[m\e[30m\e[105m            function   \e(B\e[m\e[48;5;248m \e[21;29H\e(B\e[m\e[30m\e[105m            class      \e(B\e[m\e[48;5;248m \e[22;29H\e(B\e[m\e[30m\e[105m            variable   \e(B\e[m\e[48;5;248m \e[23;29H\e(B\e[m\e[30m\e[105m            class      \e(B\e[m\e[48;5;248m \e[9;5H\e[?25h"
+  - delay: 326
+    content: "\e[?25l\e[H\e(B\e[m\e[96m\e[48;5;242m  \e(B\e[m\e[38;5;224m(\e(B\e[m\e[38;5;81mns\e(B\e[m \e(B\e[0;1m\e[96mtest\e(B\e[m\e[38;5;224m)\r\n\e(B\e[m\e[96m\e[48;5;242m  \r\n  \e(B\e[m\e[38;5;224m(\e(B\e[0;1m\e[96mprintln\e(B\e[m \e[95m\"test\"\e(B\e[m\e[38;5;224m)\r\n\e(B\e[m\e[96m\e[48;5;242m  \r\n  \e(B\e[m\e[38;5;224m(\e(B\e[0;1m\e[96mprintln\e(B\e[m \e[95m\"test\"\e(B\e[m\e[38;5;224m)\r\n\e(B\e[m\e[96m\e[48;5;242m  \r\n  \e(B\e[m\e[38;5;224m(\e(B\e[0;1m\e[96mprintln-str\e(B\e[m \e[95m\"test\"\e(B\e[m\e[38;5;224m)\r\n\e(B\e[m\e[96m\e[48;5;242m  \r\n\e(B\e[m\e[97m\e[101mE>(\e(B\e[mpri\e[?25h"
+  - delay: 406
+    content: "\e[?25l\b\b\b\e(B\e[0;1m\e[96mprint\r\n\e(B\e[m\e[94m~ \r\n~ \r\n~ \r\n~ \r\n~ \r\n~ \r\n~ \r\n~ \r\n~ \r\n~ \r\n~ \r\n~ \r\n~ \r\n\e(B\e[0;1;7mho\e[13A\e(B\e[m\e[38;5;242m\e[40m print                                  function   \e(B\e[m\e[107m \e[11;3H\e(B\e[m\e[30m\e[105m printf                                 function   \e(B\e[m\e[107m \e[12;3H\e(B\e[m\e[30m\e[105m println                                function   \e(B\e[m\e[107m \e[13;3H\e(B\e[m\e[30m\e[105m print-dup                              function   \e(B\e[m\e[48;5;248m \e[14;3H\e(B\e[m\e[30m\e[105m print-str                              function   \e(B\e[m\e[48;5;248m \e[15;3H\e(B\e[m\e[30m\e[105m print-ctor                             function   \e(B\e[m\e[48;5;248m \e[16;3H\e(B\e[m\e[30m\e[105m println-str                            function   \e(B\e[m\e[48;5;248m \e[17;3H\e(B\e[m\e[30m\e[105m print-method                           function   \e(B\e[m\e[48;5;248m \e[18;3H\e(B\e[m\e[30m\e[105m print-simple                           function   \e(B\e[m\e[48;5;248m \e[19;3H\e(B\e[m\e[30m\e[105m PriorityQueue                          class      \e(B\e[m\e[48;5;248m \e[20;3H\e(B\e[m\e[30m\e[105m PrintWriter-on                         function   \e(B\e[m\e[48;5;248m \e[21;3H\e(B\e[m\e[30m\e[105m PrimitiveIterator                      class      \e(B\e[m\e[48;5;248m \e[22;3H\e(B\e[m\e[30m\e[105m primitives-classnames                  variable   \e(B\e[m\e[48;5;248m \e[23;3H\e(B\e[m\e[30m\e[105m PrimitiveIterator.OfInt                class      \e(B\e[m\e[48;5;248m \e[9;9H\e[?25h\e[?25l\e[23;65H\e(B\e[0;1;7m7\e[9;9H\e[?25h"
+  - delay: 125
+    content: "\e[?25l\e[10;55H\e(B\e[m┌\e[10;56H─\e[10;57H─\e[10;58H─\e[10;59H─\e[10;60H─\e[10;61H─\e[10;62H─\e[10;63H─\e[10;64H─\e[10;65H─\e[10;66H─\e[10;67H─\e[10;68H─\e[10;69H─\e[10;70H─\e[10;71H─\e[10;72H─\e[10;73H─\e[10;74H─\e[10;75H─\e[10;76H─\e[10;77H─\e[10;78H─\e[10;79H─\e[10;80H┐\e[11;55H│\e[11;56H\e[30m\e[105mclojure.core/           \e(B\e[m│\e[12;55H│\e[12;56H\e[30m\e[105mprint                   \e(B\e[m│\e[13;55H└\e[13;56H─\e[13;57H─\e[13;58H─\e[13;59H─\e[13;60H─\e[13;61H─\e[13;62H─\e[13;63H─\e[13;64H─\e[13;65H─\e[13;66H─\e[13;67H─\e[13;68H─\e[13;69H─\e[13;70H─\e[13;71H─\e[13;72H─\e[13;73H─\e[13;74H─\e[13;75H─\e[13;76H─\e[13;77H─\e[13;78H─\e[13;79H─\e[13;80H┘\e[9;9H\e[?25h"
+  - delay: 3063
+    content: "\e[?25l\e(B\e[0;1m\e[96mf\e[10;3H\e(B\e[m\e[30m\e[105m print                                  function   \e[11;3H\e(B\e[m\e[38;5;242m\e[40m printf                                 function   \e[9;10H\e[?25h\e[?25l\e[23;65H\e(B\e[0;1;7m8\e[9;10H\e[?25h"
+  - delay: 85
+    content: "\e[?25l\e[10;55H\e(B\e[m┌\e[10;56H─\e[10;57H─\e[10;58H─\e[10;59H─\e[10;60H─\e[10;61H─\e[10;62H─\e[10;63H─\e[10;64H─\e[10;65H─\e[10;66H─\e[10;67H─\e[10;68H─\e[10;69H─\e[10;70H─\e[10;71H─\e[10;72H─\e[10;73H─\e[10;74H─\e[10;75H─\e[10;76H─\e[10;77H─\e[10;78H─\e[10;79H─\e[10;80H┐\e[11;55H│\e[11;80H│\e[12;55H│\e[12;80H│\e[13;55H└\e[13;56H─\e[13;57H─\e[13;58H─\e[13;59H─\e[13;60H─\e[13;61H─\e[13;62H─\e[13;63H─\e[13;64H─\e[13;65H─\e[13;66H─\e[13;67H─\e[13;68H─\e[13;69H─\e[13;70H─\e[13;71H─\e[13;72H─\e[13;73H─\e[13;74H─\e[13;75H─\e[13;76H─\e[13;77H─\e[13;78H─\e[13;79H─\e[13;80H┘\e[11;56H\e[30m\e[105mclojure.core/           \e[12;56Hprintf                  \e[9;10H\e[?25h"
+  - delay: 1461
+    content: "\e[?25l\e(B\e[m\r\e[15B\e[12X=\e[97m\e[101m<\e(B\e[0;1m\e[96mSNR\e(B\e[m\e[97m\e[101m>\e(B\e[m\e[95m45\e(B\e[m\e[97m\e[101m_on_complete_done_after\e(B\e[m\e[38;5;224m()\e]112\a\e[2 q\e[?1002l\e[?1006l\r\e[24;1H\e[?25h\e[?25l\e(B\e[m\e[33X\e[10;55H\e[94m                          \e[11;55H                          \e[12;55H                          \e[13;55H                          \e]112\a\e[6 q\e[?1002h\e[?1006h\r\e[11B\e[?25h\e[?25l\e[9;10H\e(B\e[m\e[38;5;224m)\e[23;65H\e(B\e[0;1;7m9\e[?25h\e[?25l\r\n\e(B\e[0;1m-- INSERT --\e[10;3H\e(B\e[m\e[94m                                                    \e[11;3H                                                    \e[12;3H                                                    \e[13;3H                                                    \e[14;3H                                                    \e[15;3H                                                    \e[16;3H                                                    \e[17;3H                                                    \e[18;3H                                                    \e[19;3H                                                    \e[20;3H                                                    \e[21;3H                                                    \e[22;3H                                                    \e[23;3H\e(B\e[0;1;7mme/yuta/tmp/test.clj [+]                            \e[9;3H\e(B\e[m\e[38;5;224m\e[46m(\e(B\e[0;1m\e[96mprintf\e(B\e[m\e[38;5;224m\e[46m)\e[?25h"
+  - delay: 712
+    content: "\e[?25l\e(B\e[m\r\e[15B\e[12X\e[23;65H\e(B\e[0;1;7m8\e]112\a\e[2 q\e[9;10H\e[?25h"
+  - delay: 190
+    content: "\e[?25l\e[6D\e(B\e[0;1m\e[97m\e[101mprintf\e[?25h"
+  - delay: 313
+    content: "\e[?25l\e[C\e[C\e(B\e[m\e[97m\e[101mclojure.core/printf is called with 0 args but expects 1 or more\e[65D\e[?25h"
+  - delay: 6
+    content: "\e[?25l\r\e[9;1H\e(B\e[mA>\e[7C\e[?25h"
+  - delay: 1625
+    content: "\e[?25l\e[24;70H:\e[9;10H\e[?25h\e[?25l\e[24;70H \r\e[24;1H:\e]112\a\e[2 q\e[?1002l\e[?1006l\e[?25h"
+  - delay: 136
+    content: "\e[?25lw\e[?25h"
+  - delay: 80
+    content: "\e[?25lq\e[?25h"
+  - delay: 160
+    content: "\e[?25l\r\e[24;1H\e[?25h\e[?25l\"home/yuta/tmp/test.clj\"\e]112\a\e[2 q\e[?1002h\e[?1006h\e[?25h\e[?25l\e[C9L, 78B written\r\e[24;1H\e[?25h\e[?25l\e]112\a\e[2 q\e[?1002l\e[?1006l\e(B\e[m\e[?25h\e[?1l\e>\e[>4;0m\e[?1049l\e[23;0;0t\e[23;0t\e[?2004l\e[?1004l\e[?25h"
+  - delay: 74
+    content: "\e]0;yuta@yuta-win10-wsl: ~/git/vim-sandbox\a\e[01;32myuta@yuta-win10-wsl\e[00m:\e[01;34m~/git/vim-sandbox\e[35m[git:master]\e[00m$ "
+  - delay: 504
+    content: e
+  - delay: 239
+    content: x
+  - delay: 102
+    content: i
+  - delay: 129
+    content: t
+  - delay: 183
+    content: "\r\n\e]0;yuta@yuta-win10-wsl:/home/yuta/git/vim-sandbox exit\alogout\r\n\e]0;yuta@yuta-win10-wsl:/home/yuta/git/vim-sandbox [ \"$SHLVL\" = 1 ]\a"
