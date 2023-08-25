@@ -10,10 +10,13 @@ vi run.sh # fix USER variable for your UNIX account.
 
 cp vimrc.sample .vimrc
 vi .vimrc # fix vimscript according to your needs.
+```
 
+## Run
+
+```bash
 ./run.sh # docker compose build & run
 docker-compose exec -u root vim-sandbox sudo -u ${USER} nvim -u /home/${USER}/.vimrc # if you don't need to build.
-
 ```
 
 By default, `vimrc.sample` uses:
