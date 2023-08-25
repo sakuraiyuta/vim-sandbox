@@ -5,5 +5,4 @@ USER="testuser"
 docker-compose down && \
   docker-compose build && \
   docker-compose up -d && \
-  docker-compose exec vim-sandbox sudo -u ${USER} nvim -u ~/.vimrc ~/tmp/test.clj
-
+  docker-compose exec vim-sandbox sudo -u ${USER} nvim -u ~/.vimrc
